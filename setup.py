@@ -8,7 +8,7 @@ setup(
     description="Don's personal toolkits for data science and machine learning.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/Don-Yin/don-ware",
+    url="https://github.com/Don-Yin/donware",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
