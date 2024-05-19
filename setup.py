@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="donware",
-    version="0.1.8",
+    version="0.1.9",
     author="Don Yin",
     author_email="Don_Yin@outlook.com",
     description="Don's personal toolkits for data science and machine learning.",
