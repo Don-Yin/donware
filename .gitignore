@@ -1,1 +1,5 @@
 .Ds_Store
+_dev.py
+build
+donware.egg-info
+__pycache__

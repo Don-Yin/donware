@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="donware",
-    version="0.1.13",
+    version="0.1.14",
     author="Don Yin",
     author_email="Don_Yin@outlook.com",
     description="Don's personal toolkits for data science and machine learning.",
@@ -16,9 +16,4 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.11",
-    entry_points={
-        "console_scripts": [
-            "post_install = post_install:print_message",
-        ],
-    },
 )
