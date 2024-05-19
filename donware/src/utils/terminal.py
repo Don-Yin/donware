@@ -1,5 +1,5 @@
-import shutil
 from rich import print
+import shutil
 
 
 def banner(content: str, symbol="-"):
