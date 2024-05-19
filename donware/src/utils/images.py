@@ -27,7 +27,7 @@ def trim_white_margins(dir_from: Path, dir_to: Path, white_tolerance: int = 10):
     dir_from, dir_to = Path(dir_from), Path(dir_to)
     dir_to.mkdir(parents=True, exist_ok=True)
 
-    for image_path in dir_from.glob("*.png") + dir_from.glob("*.jpg") + dir_from.glob("*.jpeg"):
+    for image_path in list(dir_from.glob("*.png")) + list(dir_from.glob("*.jpg")) + list(dir_from.glob("*.jpeg")):
         image = Image.open(image_path).convert("RGBA")
         img_array = np.array(image)
         non_white_pixels = np.where(
