@@ -1,4 +1,4 @@
-from terminal import banner
+from donware import banner
 from rich import print
 import inspect
 
