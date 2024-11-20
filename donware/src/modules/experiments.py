@@ -100,7 +100,9 @@ class GridSearch:
         seen = set()
 
         for combo in self.combinations:
-            items = tuple(sorted(combo.items()))
+            # convert list values to tuples (order is preserved)
+            hashable_combo = {k: tuple(v) if isinstance(v, list) else v for k, v in combo.items()}
+            items = tuple(sorted(hashable_combo.items()))
             if items not in seen:
                 seen.add(items)
                 unique_combinations.append(combo)
