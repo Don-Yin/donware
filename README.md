@@ -1,8 +1,10 @@
-# Overview
-
+# DonWare
 Don's personal tool collection. To learn more, run:
 
 ```
-from donware import inspect_package
-inspect_package(donware)
+from donware import doc
+
+doc()
 ```
+
+Only lightweight and reliable tools are included/considered.
